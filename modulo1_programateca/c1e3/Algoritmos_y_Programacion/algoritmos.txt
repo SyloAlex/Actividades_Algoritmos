@@ -1,0 +1,10 @@
+Algoritmos y Programacion
+
+Evaluacion       Porcentaje       Fecha
+
+Quiz                10%          Semana 5
+Examen I            20%          Semana 7
+Trabajo I            5%          Semana 7
+Trabajo II           5%          Semana 10
+Examen II           30%          Semana 11
+Proyecto            30%          Semana 12
