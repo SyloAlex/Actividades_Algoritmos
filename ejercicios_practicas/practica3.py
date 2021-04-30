@@ -53,5 +53,4 @@ class DataCollector:
             print(f"{self.name}, cumpliste 18 años hace {age_difference} años, probablemente",
                   f"entre el {year_difference-1} y el {year_difference}")
 
-data = DataCollector()
-data.message()
+data = DataCollector().message()
