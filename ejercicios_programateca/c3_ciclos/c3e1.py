@@ -38,5 +38,4 @@ class Numbers:
         if self.number == 0:
             print(f"El numero {self.number} es tecnicamente considerado par")
 
-data = Numbers()
-data.check_odd_even()
+data = Numbers().check_odd_even()

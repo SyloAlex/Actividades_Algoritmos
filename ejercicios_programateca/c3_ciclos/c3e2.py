@@ -48,5 +48,4 @@ class DataCollector:
             print(f"{self.name} tiene: {self.age} años y su entrada de cine cuesta: {price}$")
 
 
-data = DataCollector()
-data.get_ticket_price()
+data = DataCollector().get_ticket_price()

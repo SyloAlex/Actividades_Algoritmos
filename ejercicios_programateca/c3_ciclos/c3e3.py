@@ -44,5 +44,4 @@ class PointsCollector:
             price = "Oro"
             print(f"Felicitaciones, Ganaste la medalla de {price} por haber tenido {self.points} pts!")
 
-score = PointsCollector()
-score.check_points()
+score = PointsCollector().check_points()
