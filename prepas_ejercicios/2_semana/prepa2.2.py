@@ -6,6 +6,10 @@ class Word:
         self.word = ''
 
     def get_input(self):
+        '''
+            Obtiene del usuario una palabra o secuencia de numeros
+            y verifica si es valido
+        '''
         valid = False
         while valid is False:
             try:
@@ -19,6 +23,9 @@ class Word:
                 print("Por favor, ingresa una palabra en letras o un numero")
     
     def check_palindrome(self):
+        '''
+            Revisa si el input es o no un palindromo
+        '''
         self.get_input()
         palindrome = self.word[::-1]
         if self.word.lower() == palindrome.lower():
