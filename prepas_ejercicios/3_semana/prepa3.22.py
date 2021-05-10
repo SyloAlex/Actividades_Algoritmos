@@ -22,10 +22,9 @@ def get_input():
             print("Las letras no son numeros :/ Por favor escriba un numeros")
     return inp_number
 
-#test = get_input()
 def mult_matrix(number, matrix):
     mult_matrix = np.multiply(matrix, number)
     print(mult_matrix)
 
-test = get_input()
-mult_matrix(test, matrix1)
+multiplier = get_input()
+mult_matrix(multiplier, matrix1)

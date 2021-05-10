@@ -22,7 +22,7 @@ def find_prime_numbers(number):
         algunos da como resultado el input
     '''
     prime_numbers = []
-    prime_trial = []
+    prime_combination = []
     for n in range(2, number):
         if number % n == 0:
             prime_numbers.append(n)
@@ -32,12 +32,12 @@ def find_prime_numbers(number):
         for prime in prime_numbers:
             for prime2 in prime_numbers:
                 if prime * prime2 == number:
-                    if [prime2, prime] not in prime_trial:
-                        prime_trial.append([prime, prime2])
-        if prime_trial == 0:
+                    if [prime2, prime] not in prime_combination:
+                        prime_combination.append([prime, prime2])
+        if prime_combination == 0:
             print("No hay numeros primos que den como resultado el numero ingresado")
         else:
-            print(f"El reultado es: {prime_trial}")
+            print(f"El reultado es: {prime_combination}")
 
 numero = get_input()
 find_prime_numbers(numero)
