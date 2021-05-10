@@ -61,3 +61,6 @@ class Agenda:
                     print("La opcion ingresada no es valida")
 
 prueba = Agenda().execute()
+
+# Ejercicio 3: Banco con estados de cuenta, deposito y retiros. Para ver solucion, vaya al aparartado:
+# prepas_ejercicios/1_semana/prepa1.1.py
