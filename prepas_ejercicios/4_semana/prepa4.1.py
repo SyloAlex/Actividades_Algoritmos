@@ -19,7 +19,7 @@ coord2 = [(4,1), (25,11), (8,5), (16,8), (45,77),
           (10,10), (4,1), (34,2), (25,11), (8,5)]
 
 def sort_coords(coordinates):
-    coords = sorted(coordinates)
+    coords = sorted(set(coordinates))
     print("x    y\n------")
     for x, y in coords:
         print(f"{x}   {y}")
