@@ -167,7 +167,6 @@ class Calculator:
                         break
                 if flag == True:
                     free_square *= number
-        print(free_square)
         if free_square == self.number:
             print("El numero {} esta libre de cuadrados!".format(self.number))
         else:
