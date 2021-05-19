@@ -27,4 +27,12 @@ def mult_matrix(number, matrix):
     print(mult_matrix)
 
 multiplier = get_input()
-mult_matrix(multiplier, matrix1)
+matrix_multi = []
+for out_index in range(len(matrix1)):
+    in_matrix_multi = []
+    for in_index in range(len(matrix1[out_index])):
+        in_matrix_multi.append(matrix1[out_index][in_index] * multiplier)
+    matrix_multi.append(in_matrix_multi)
+print(*matrix_multi, sep="\n")
+
+# mult_matrix(multiplier, matrix1)
