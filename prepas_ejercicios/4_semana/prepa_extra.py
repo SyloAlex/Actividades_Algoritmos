@@ -171,12 +171,29 @@ class Sirius:
         else:
             print("\nLista de estudiantes:\n---------------------")
             for id in sorted(self.database):
-                print("Nombre: {} >>Edad: {} >>Carnet: {} >>Cedula: {}".format(self.database[id]["Nombre"], 
+                print(">>Nombre: {}\n>>Edad: {}\n>>Carnet: {}\n>>Cedula: {}".format(self.database[id]["Nombre"], 
                                                                                  self.database[id]["Edad"], 
                                                                                  id, self.database[id]["Cedula"]))
                 print(">>Materias:")
                 print(*self.database[id]["Materias"], sep=" / ")
                 print("---------------------")
+
+    def looping_options(self):
+        valid = False
+        while not valid:
+            option_continue = input("Desea hacer algo mas? (Si o No): ").lower()
+            if option_continue == "no":
+                print("Entendido, que tenga un feliz dia!")
+                return_valid = True
+                valid = True
+            elif option_continue == "si":
+                return_valid = False
+                valid = True
+                continue
+            else:
+                print("La opcion ingresada no es valida, se retornara al menu!")
+        
+        return return_valid
 
     def execute(self):
         '''
@@ -196,14 +213,8 @@ class Sirius:
             elif option == 4:
                 self.print_database()
             else:
+                print("Entendido, se cerrara el programa")
                 exit()
-            option_continue = input("Desea hacer algo mas? (Si o No): ").lower()
-            if option_continue == "no":
-                print("Entendido, que tenga un feliz dia!")
-                valid_option = True
-            elif option_continue == "si":
-                continue
-            else:
-                print("La opcion ingresada no es valida, se retornara al menu!")
+            valid_option = self.looping_options()
 
 Sirius().execute()
