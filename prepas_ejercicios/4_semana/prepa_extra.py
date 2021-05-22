@@ -12,7 +12,6 @@ class Sirius:
             El usuario ingresa la opcion de lo que desea hacer en la base de datos
         '''
         valid = False
-        print("Estas son sus opciones:\n1. Agregar un usuario\n2. Eliminar un usuario\n3. Actualizar datos\n4. Ver la Base de datos\n5. Salir")
         while valid is False:
             try:
                 option = int(input("Que desea hacer?: "))
@@ -88,15 +87,8 @@ class Sirius:
                 print("Debe ingresar el numero de carnet del estudiante")
         if student in self.database:
             valid = False
-            while valid is False:
-                try:
-                    update_option = int(input("Desea actualizar el nombre (1), cedula (2), edad (3), carnet (4) o materias (5): "))
-                    if update_option > 0 and update_option < 6:
-                        valid = True
-                    else:
-                        print("La opcion seleccionada no es valida")
-                except ValueError:
-                    print("Debe ingresar el numero de carnet del estudiante")
+            print("Puede actualizar:\n1. Nombre\2. Cedula\n3. Edad\4. Carnet\n5. Materias")
+            update_option = self.get_options()
             if update_option == 1:
                 self.database[student]["Nombre"] = input("Ingrese el nuevo nombre del estudiante: ")
             elif update_option == 2:
@@ -203,6 +195,7 @@ class Sirius:
         print("Bienvenido a la base de datos de Sirius")
         valid_option = False
         while valid_option is False:
+            print("Estas son sus opciones:\n1. Agregar un usuario\n2. Eliminar un usuario\n3. Actualizar datos\n4. Ver la Base de datos\n5. Salir")
             option = self.get_options()
             if option == 1:
                 self.add_student()
