@@ -1,0 +1,5 @@
+Se desea desarrollar un sistema para el manejo de las clases, preparadurías, estudiantes,
+preparadores y profesores. Cada profesor cuenta con su nombre, apellido, cédula y las
+secciones que dictan, las cuales son 3. Los estudiantes tienen su nombre, apellido, carnet
+y las secciones que cursan. Cada estudiante cursa 5 secciones. Las secciones tienen el
+nombre y código de la asignatura, el profesor que las dicta, salón asignado y horario.

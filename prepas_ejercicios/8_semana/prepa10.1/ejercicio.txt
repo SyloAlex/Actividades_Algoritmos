@@ -1,0 +1,13 @@
+Te han contratado para que diseñes un programa en Python para llevar a cabo el registro de los 
+participantes de un concurso de talentos a realizarse próximamente. Deberás realizarlo utilizando 
+tus conocimientos sobre POO, herencia y polimorfismo.
+Tu labor consiste en:
+Diseñar una clase padre llamada Participante, y sus clases hijas, de acuerdo a las categorías del 
+concurso (Canto, Baile, Música, Libre).
+La clase padre debe almacenar: nombre del concursante (o grupo), si es un solo o un grupo, 
+categoría, número de teléfono y número de registro.
+- Si participará en Canto, debe tener también el nombre de la canción a interpretar y el nombre de su autor.
+- Si participará en Baile, debe incluirse el estilo de baile que interpretará.
+- Si participará en Música, debe indicarse el (o los) instrumentos a tocar.
+- Si participará en Libre, debe solicitarse además cuál será el talento a mostrar.
+La clase padre debe tener un método que imprima organizadamente los atributos del concursante.
